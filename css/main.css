@@ -1361,7 +1361,7 @@ hr {
 	margin: 108px auto 30px;
 }
 #hero-slider .flex-caption {
-	margin: 0 15%;
+	margin: 15% 15%;
 }
 #hero-slider .flex-caption h1 {
 	font: 54px/1.3 "raleway-semibold", sans-serif;
@@ -1997,4 +1997,7 @@ hr {
 }
 .more-projects .portfolio-wrapper {
 	text-align: left;
+}
+#hero {
+	height: 100vh;
 }
