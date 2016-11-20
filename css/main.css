@@ -817,7 +817,7 @@ header .logo {
 }
 header .logo a {
 	display: block;
-	margin: 0 20px 0 0;
+	margin: 10px 20px 0 0;
 	padding: 0;
 	border: none;
 	outline: none;
@@ -825,7 +825,7 @@ header .logo a {
 	text-shadow: none;
 	color: transparent;
 	width: 126px;
-	height: 12px;
+	height: 50px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-image: url("../images/logo.png");
