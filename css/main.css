@@ -1366,6 +1366,7 @@ hr {
 #hero-slider .flex-caption h1 {
 	font: 54px/1.3 "raleway-semibold", sans-serif;
 	color: white;
+	font-weight: 900;
 	letter-spacing: -1px;
 	margin-bottom: 36px;
 }
