@@ -1,2 +1,0 @@
-# avenu
-Avenu website repository
