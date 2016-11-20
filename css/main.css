@@ -2002,3 +2002,10 @@ hr {
 #hero {
 	height: 100vh;
 }
+::-moz-selection { /* Code for Firefox */
+    background: #f26522;
+}
+
+::selection {
+    background: #f26522;
+}
