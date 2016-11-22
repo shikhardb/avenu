@@ -2009,3 +2009,9 @@ hr {
 ::selection {
     background: #f26522;
 }
+#whowe {
+	background: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
