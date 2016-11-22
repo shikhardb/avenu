@@ -1555,6 +1555,7 @@ hr {
 	margin-bottom: 15px;
 	padding: 0 22px;
 }
+
 .service-list .icon-part {
 	/*background: #f26522;*/
 	color: white;
@@ -2013,4 +2014,18 @@ hr {
 	background: #ffffff;
     padding-top: 120px;
     text-align: center;
+}
+
+.welist .icon-part {
+    width: 300px;
+}
+@media screen and (min-width: 480px) {
+	.welist .bgrid{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.welist .bgrid{
+		width: 100%;
+	}
 }
