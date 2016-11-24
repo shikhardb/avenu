@@ -1,5 +1,1078 @@
 /* =================================================================== */
 /* 
+/*  Puremedia v1.0 Base Stylesheet
+/*  url:styleshout.com
+/*  10-09-2014
+/*
+/*  ------------------------------------------------------------------ 
+  
+    TOC: 
+    a. Reset
+    b. Basic Setup Styles
+    c. Typography  
+    d. Media
+    e. Grid
+    f. MISC
+  
+/* =================================================================== */
+
+/* 
+/* a. Reset - normalize.css v3.0.1 | MIT License | git.io/normalize
+/* =================================================================== */
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+[hidden], template {
+	display: none;
+}
+a {
+	background: transparent;
+}
+a:active, a:hover {
+	outline: 0;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+pre {
+	overflow: auto;
+}
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+button {
+	overflow: visible;
+}
+button, select {
+	text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input {
+	line-height: normal;
+}
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+legend {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+}
+optgroup {
+	font-weight: bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+}
+
+/* 
+/* b. Basic Setup Styles - Top Elements
+/* =================================================================== */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 62.5%;
+}
+body {
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+}
+
+/* 
+/* c. Typography
+====================================================================== */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizeLegibility;
+	line-height: 1.2;
+}
+hr {
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 11px 0 24px;
+	height: 0;
+}
+em, i {
+	font-style: italic;
+	line-height: inherit;
+}
+strong, b {
+	font-weight: bold;
+	line-height: inherit;
+}
+small {
+	font-size: 60%;
+	line-height: inherit;
+}
+ul {
+	list-style: none;
+}
+ol {
+	list-style: decimal;
+}
+ol, ul.square, ul.circle, ul.disc {
+	margin-left: 17px;
+}
+ul.square {
+	list-style: square;
+}
+ul.circle {
+	list-style: circle;
+}
+ul.disc {
+	list-style: disc;
+}
+ul li {
+	padding-left: 4px;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin: 3px 0 3px 17px;
+}
+
+/* links
+---------------------------------------------------------------------- */
+a {
+	text-decoration: none;
+	line-height: inherit;
+}
+a img {
+	border: none;
+}
+a:focus {
+	outline: none;
+}
+p a, p a:visited {
+	line-height: inherit;
+}
+
+/* 
+/* d. Media
+/* =================================================================== */
+img, video, embed, object {
+	max-width: 100%;
+	height: auto;
+}
+object, embed {
+	height: 100%;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* 
+/* e. Grid
+===================================================================== */
+.row {
+	width: 94%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.ie8 .row {
+	width: 1024px;
+}
+.narrow .row {
+	max-width: 980px;
+}
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -18px;
+	margin-right: -18px;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.column, .columns, .bgrid {
+	position: relative;
+	padding: 0 18px;
+	min-height: 1px;
+	float: left;
+}
+.column.centered, .columns.centered {
+	float: none;
+	margin: 0 auto;
+}
+.row.collapsed > .column, .row.collapsed > .columns, .column.collapsed, .columns.collapsed {
+	padding: 0;
+}
+[class*="column"] + [class*="column"]:last-child {
+	float: right;
+}
+[class*="column"] + [class*="column"].end {
+	float: right;
+}
+.one, .row .one {
+	width: 8.33333%;
+}
+.two, .row .two {
+	width: 16.66667%;
+}
+.three, .row .three {
+	width: 25%;
+}
+.four, .row .four {
+	width: 33.33333%;
+}
+.five, .row .five {
+	width: 41.66667%;
+}
+.six, .row .six {
+	width: 50%;
+}
+.seven, .row .seven {
+	width: 58.33333%;
+}
+.eight, .row .eight {
+	width: 66.66667%;
+}
+.nine, .row .nine {
+	width: 75%;
+}
+.ten .row .ten {
+	width: 83.33333%;
+}
+.eleven, .row .eleven {
+	width: 91.66667%;
+}
+.twelve, .row .twelve {
+	width: 100%;
+}
+
+/* tablets
+--------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+	.row {
+		width: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.column, .columns {
+		padding: 0 15px;
+	}
+	.tab-fourth, .row .tab-fourth {
+		width: 25%;
+	}
+	.tab-third, .row .tab-third {
+		width: 33.33333%;
+	}
+	.tab-half, .row .tab-half {
+		width: 50%;
+	}
+	.tab-2thirds, .row .tab-2thirds {
+		width: 66.66667%;
+	}
+	.tab-3fourths, .row .tab-3fourths {
+		width: 75%;
+	}
+	.tab-whole, .row .tab-whole {
+		width: 100%;
+	}
+}
+
+/* mobile
+--------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.row {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.row .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.column, .columns {
+		padding: 0 10px;
+	}
+	.mob-fourth, .row .mob-fourth {
+		width: 25%;
+	}
+	.mob-half, .row .mob-half {
+		width: 50%;
+	}
+	.mob-3fourths, .row .mob-3fourths {
+		width: 75%;
+	}
+	.mob-whole, .row .mob-whole {
+		width: 100%;
+	}
+}
+
+/* small mobile devices
+--------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.row {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.column, .columns {
+		width: auto !important;
+		float: none !important;
+		margin-left: 0;
+		margin-right: 0;
+		clear: both;
+		padding: 0;
+	}
+	[class*="column"] + [class*="column"]:last-child {
+		float: none;
+	}
+}
+
+/* larger screens
+--------------------------------------------------------------- */
+@media screen and (min-width:1200px) {
+	.wide .wrap {
+		max-width: 1180px;
+	}
+}
+
+
+/* block grids
+--------------------------------------------------------------- */
+.bgrid-sixth .bgrid {
+	width: 16.66667%;
+}
+.bgrid-fourth .bgrid {
+	width: 25%;
+}
+.bgrid-third .bgrid {
+	width: 33.33333%;
+}
+.bgrid-half .bgrid {
+	width: 50%;
+}
+.bgrid {
+	padding: 0;
+}
+
+/* Clearing for block grid columns. Allows columns with
+different heights to align properly. */
+.first {
+	clear: both;
+}
+
+/* first column in large(default) screen - for IE8 */
+.bgrid-sixth .bgrid:nth-child(6n+1), .bgrid-fourth .bgrid:nth-child(4n+1), .bgrid-third .bgrid:nth-child(3n+1), .bgrid-half .bgrid:nth-child(2n+1) {
+	clear: both;
+}
+
+/* smaller screens */
+@media screen and (max-width:900px) {
+	/* block grids for small screens */
+	.s-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+	.s-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+	.s-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+	.s-bgrid-half .bgrid {
+		width: 50%;
+	}
+	.s-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+	.first, [class*="bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+	.s-bgrid-sixth .bgrid:nth-child(6n+1), .s-bgrid-fourth .bgrid:nth-child(4n+1), .s-bgrid-third .bgrid:nth-child(3n+1), .s-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+}
+
+/* tablets */
+@media screen and (max-width:768px) {
+	.tab-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+	.tab-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+	.tab-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+	.tab-bgrid-half .bgrid {
+		width: 50%;
+	}
+	.tab-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+	.first, [class*="tab-bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+	.tab-bgrid-sixth .bgrid:nth-child(6n+1), .tab-bgrid-fourth .bgrid:nth-child(4n+1), .tab-bgrid-third .bgrid:nth-child(3n+1), .tab-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+}
+
+/* mobile devices */
+@media screen and (max-width:600px) {
+	.mob-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+	.mob-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+	.mob-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+	.mob-bgrid-half .bgrid {
+		width: 50%;
+	}
+	.mob-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+	.first, [class*="mob-bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+	.mob-bgrid-sixth .bgrid:nth-child(6n+1), .mob-bgrid-fourth .bgrid:nth-child(4n+1), .mob-bgrid-third .bgrid:nth-child(3n+1), .mob-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+}
+
+/* stack on small mobile devices */
+@media screen and (max-width:400px) {
+	.stack .bgrid {
+		width: auto !important;
+		float: none !important;
+		margin-left: 0;
+		margin-right: 0;
+		clear: both;
+	}
+}
+
+/* 
+/* f. MISC
+===================================================================== */
+
+/* Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
+--------------------------------------------------------------------- */
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+
+/* Misc Helper Styles
+--------------------------------------------------------------------- */
+.hidden {
+	display: none;
+}
+.remove-bottom {
+	margin-bottom: 0;
+}
+.half-bottom {
+	margin-bottom: 15px !important;
+}
+.add-bottom {
+	margin-bottom: 30px !important;
+}
+.no-border {
+	border: none;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/* =================================================================== */
+/* 
+/*  Puremedia v1.0 Media Queries
+/*  url:styleshout.com
+/*  10-10-2014
+/*
+/* =================================================================== */
+
+
+/* small screens */
+@media only screen and (max-width:900px) {
+
+	/* content styles */
+	#content #sidebar { padding-left: 0; }
+
+	/* hero section */
+	#hero-slider {	margin: 96px auto 30px;	}
+	#hero-slider .flex-caption h1 {
+		font: 44px/1.3 "raleway-semibold", sans-serif;
+		margin-bottom: 36px;
+	}
+
+	/* portfolio section */
+	#portfolio .row.items {
+		max-width: none;
+		width: 100%;
+		padding: 0;
+	}
+	#portfolio .row.items .twelve.columns {
+		padding: 0;
+	}
+
+	/* about section */
+	#team-wrapper .member-pic {
+		width: 66px;
+		height: 66px;
+	}
+
+
+} /* 900 */
+
+
+/* tablets */
+@media only screen and (max-width:768px) {
+
+   /* header styles */
+	header {	background: #12151b;	}
+	header {	height: 60px; }
+	header .logo {	margin: 24px 0 0 0; }
+	header .logo a { margin-right: 0; }
+	
+	/* mobile navigation */
+	#nav-wrap {
+		z-index: 991;
+		display: block;
+		margin-top: 0;
+		width: 100%;
+		float: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#nav-wrap > a {
+		background: #f26522;
+		border: none;
+		color: white;
+		height: 60px;
+		min-width: 60px;
+		font-size: 12px;
+		text-align: left;
+		float: right;
+		padding: 0;
+		position: relative;
+	}
+	#nav-wrap .menu-text {
+		text-transform: uppercase;
+		margin-right: 60px;
+		padding-left: 20px;
+		vertical-align: middle;
+		line-height: 60px;
+		display: none;
+	}
+	#nav-wrap .menu-icon {
+		display: inline-block;
+		width: 20px;
+		height: 3px;
+		margin-top: -3px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		bottom: auto;
+		left: auto;
+		background: white;
+	}
+	#nav-wrap .menu-icon:before, 
+	#nav-wrap .menu-icon:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: inherit;
+		left: 0;
+	}
+	#nav-wrap .menu-icon:before {
+		bottom: 6px;
+	}
+	#nav-wrap .menu-icon:after {
+		top: 6px;
+	}
+	#nav-wrap ul#nav {
+		background: #262d3a;
+		padding: 54px 45px 60px 45px;
+		margin: 0;
+		height: auto;
+		display: none;
+		clear: both;
+		width: 100%;
+		float: none;
+		position: relative;
+		top: 0;
+		right: 0;
+	}
+	#nav-wrap ul#nav > li {
+		display: block;
+		float: none;
+		height: auto;
+		text-align: left;
+		border-bottom: 1px dotted #3b4558;
+		padding: 6px 0;
+	}
+	#nav-wrap ul#nav > li:first-child {
+		border-top: 1px dotted #3b4558;
+	}
+	#nav-wrap ul#nav li a {
+		display: block;
+		width: auto;
+		padding: 0;
+		padding: 12px 0;
+		line-height: 16px;
+		border: none;
+	}
+	#nav-wrap ul#nav li a:hover {
+		color: white;
+	}
+	#nav-wrap ul#nav li.current > a {
+		background: none;
+		color: #f26522;
+	}
+	.js #nav-wrap a.mobile-btn {
+		display: none;
+	}
+	.js #nav-wrap a#toggle-btn {
+		display: block;
+	}
+	.no-js #nav-wrap:not(:target) > a:first-of-type, 
+	.no-js #nav-wrap:target > a:last-of-type {
+		display: block;
+	}
+	.no-js #nav-wrap:target ul#nav {
+		display: block;
+	}
+
+	/* content styles */
+	#content { padding-top: 54px;	} 
+	#content #sidebar {
+		margin-top: 42px;
+		padding-left: 0;
+	}
+
+	/* sidebar styles */
+	#sidebar .link-list {
+		margin-left: -3px; 
+	}
+	#sidebar .link-list li {
+		display: inline-block;
+		padding: 8px 0 8px 0;
+	}
+	#sidebar .link-list li a {
+		display: inline-block;
+		white-space: nowrap;		
+	}
+	#sidebar .link-list li:before {
+		content: "|";
+		padding-left: 3px;
+		padding-right: 6px;
+		color: #cfd9db;
+	}
+	#sidebar .link-list li:first-child:before {
+		display: none;
+	}
+	#sidebar .link-list li:first-child {
+		margin-left: 6px;
+	}
+
+	/* footer styles */
+	footer {	padding-bottom: 36px; }
+	footer .footer-about { padding-right: 25px; }
+	footer .copyright {
+		padding-left: 15px;
+		padding-right: 60px;
+	}
+	footer #go-top { right: 0;	}
+	footer #go-top a {
+		height: 60px;
+		width: 60px;
+		line-height: 60px;
+		padding: 0;
+	}
+	footer #go-top a span { display: none;	}
+	footer #go-top a i {	font-size: 16px; }
+
+	/* common and shared styles */
+	.section-head p {	width: 100%; } 
+	#page-title h1 {
+		font: 46px/1.3 "raleway-bold", sans-serif;
+		width: 100%;
+	}
+	#page-title p {
+		font: 15px/30px "merriweather-light", sans-serif;
+		width: 100%;
+	}
+	.entry header { text-align: center;	}
+	.entry .entry-meta ul {
+		text-align: center;
+		margin-top: 6px;
+	}
+	.pagenav a[rel="next"]:after { float: right; }
+
+	/* hero section */
+	#hero-slider {	margin: 78px auto 24px;	}
+	#hero-slider .flex-caption { margin: 0 8%; }
+	#hero-slider .flex-caption h1 {
+		font: 42px/1.3 "raleway-semibold", sans-serif;
+	}
+
+	/* about section */
+	#about .about-content {	padding: 0 30px; }
+	#about .left {	padding-right: 15px; }
+	#about .right { padding-left: 15px;	}
+	/*#team-wrapper .member-header { margin-bottom: 0; }*/
+
+	/* blog entry */
+	.entry p.lead {
+		font: 16px/33px "merriweather-light", sans-serif;
+	} 
+	#comments h3 {	text-align: center; }
+	#comments form {
+		margin-left: 0;
+		border-bottom: 1px solid white;
+	}
+	#comments form input, #comments form textarea, 
+	#comments form select, #comments form label {
+		width: 100%;
+		float: none;
+	}
+	#comments form label { padding-left: 0; }
+	#comments form div {	margin: 6px 0 0 0; }
+	#comments form input { margin-bottom: 0; }
+	#comments form .message label { display: block;	}
+	#comments form button {
+		width: 100%;
+		margin-top: 24px;
+	}
+
+
+} /* 768 */
+
+
+/* mobiles */
+@media only screen and (max-width:600px) {
+
+	/* content styles */
+	#content { padding-top: 48px;	}
+
+	/* footer styles */
+	footer .footer-about { padding-right: 10px; }
+	footer .copyright { padding-left: 10px; }
+
+	/* common and shared styles */
+	.section-head p {
+		font: 16px/33px "merriweather-light", sans-serif;
+	}
+	.entry header h1 {
+		font: 26px/33px "raleway-bold", sans-serif;
+	}
+
+	/* hero section */
+	#hero { padding-bottom: 66px;	}
+
+	/* service section */
+	.service-list .bgrid {
+		margin-top: 12px;
+		margin-bottom: 12px;
+		padding: 0 60px;
+	}
+
+	/* about section */
+	#about h3 {	text-align: center; }
+	#about .left {	padding-right: 10px;	}
+	#about .right { padding-left: 10px;	}
+	#team-wrapper .member {	text-align: center; }
+	#team-wrapper .member-pic {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -100px;
+		margin-top: -39px;
+	}
+	#team-wrapper .member-name { margin-left: 85px;	}
+	#team-wrapper .member-name h3, #team-wrapper .member-name span {
+		text-align: left;
+	}
+
+	/* journal section */
+	#journal #blog-wrapper { margin: 24px 20px 0 20px;	}
+	#journal #blog-wrapper h5, #journal #blog-wrapper h3 {
+		text-align: center;
+	}
+
+	/* contact section */
+	#contact .form-section {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	/* blog entry */
+	.commentlist {
+		width: 100%;
+		margin-left: 0;
+	}
+	.commentlist > li { padding-left: 0; }
+	.commentlist li .avatar { display: none; }
+
+	/* portfolio entry */
+	.more-projects h1 {
+		font: 26px/33px "raleway-bold", sans-serif;
+	}
+
+
+} /* 600 */
+
+
+/* small small mobiles */
+@media only screen and (max-width:480px) {
+
+	/* hero section */
+	#hero-slider {
+		width: 94%;
+		margin: 54px auto 24px;
+	}
+	#hero-slider .flex-caption { margin: 0; }
+	#hero-slider .flex-caption h1 {
+		font: 36px/1.3 "raleway-semibold", sans-serif;
+	}
+	/* about section */
+	#team-wrapper .member-pic {
+		width: 60px;
+		height: 60px;	
+		margin-top: -30px;			
+	}
+	#team-wrapper .member-name { margin-left: 60px;	}
+	#team-wrapper .member-name h3 {
+		font-size: 15px;
+		line-height: 18px;	
+		margin-bottom: 12px;	
+	}
+
+} /* 480 */
+
+
+@media only screen and (max-width:460px) {
+
+	/*	footer styles */ 
+	footer .right-cols .columns {
+		width: 100% !important;
+	}
+
+	/* services section */
+	.service-list .bgrid {
+		padding: 0 22px;
+	}
+
+	/* journal section */
+	#journal #blog-wrapper {
+		margin: 24px -18px 0 -18px;
+	}
+
+	/* contact section */
+	#contact .form-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+} /* 460 */
+
+
+@media only screen and (max-width:420px) {
+
+	/* page-title */
+	#page-title h1 {
+		font: 38px/1.3 "raleway-bold", sans-serif;
+	}
+
+	/* portfolio section */
+	.item .item-wrap .portfolio-item-meta {
+		margin-right: 15px;
+	}
+	.item .item-wrap .portfolio-item-meta h5 {
+		font: 13px/18px "raleway-heavy", sans-serif;
+	}
+	.item .item-wrap .portfolio-item-meta p {
+		font: 12px/18px "raleway-semibold", sans-serif;
+	}
+
+} /* 420 */
+
+
+@media only screen and (max-width:400px) {
+
+	/* footer styles */
+	footer .footer-about { padding-right: 0; }
+	footer .copyright { padding-left: 0; }
+
+	/* hero section */
+	#hero-slider {	width: 100%; }
+	#hero-slider .flex-caption h1 {
+		font: 32px/1.3 "raleway-semibold", sans-serif;
+	}
+
+	/* about section */
+	#about .about-content {	padding: 0 30px; }
+	#about .left {	padding: 0;	}
+	#about .right { padding: 0; }
+
+	/* contact section */
+	#contact .form-section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+} /* 400 */
+
+
+/* make sure the menu is visible on larger screens
+-------------------------------------------------------------------------- */
+@media only screen and (min-width:768px) {
+	#nav-wrap ul#nav {
+		display: block !important;
+	}
+}
+/* =================================================================== */
+/* 
 /*  Puremedia v1.0 Main Stylesheet
 /*  url:styleshout.com
 /*  10-10-2014
@@ -31,7 +1104,6 @@
 /* 
 /* a. Webfonts and Iconfonts
 /* =================================================================== */
-@import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("simple-line-icons/simple-line-icons.css");
 
@@ -43,7 +1115,7 @@
 ---------------------------------------------------------------------- */
 body {
 	background: #0e1015;
-	font: 15px/30px "merriweather-regular", serif;
+	font: 15px/30px "Rubik", serif;
 	font-weight: normal;
 	color: #575859;
 }
@@ -65,7 +1137,8 @@ a:hover, a:focus {
 /* Typography
 --------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "raleway-bold", sans-serif;
+	font-family: "Rubik", sans-serif;
+font-weight: bold;
 	color: #252525;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -113,15 +1186,15 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font: 17px/33px "merriweather-light", serif;
+	font: 17px/33px "Rubik", serif;
 	color: #707273;
 }
 em {
-	font: 15px/30px "merriweather-italic", serif;
+	font: 15px/30px "Rubik", serif;
 	font-style: normal;
 }
 strong, b {
-	font: 15px/30px "merriweather-bold", serif;
+	font: 15px/30px "Rubik", serif;
 	font-weight: normal;
 }
 small {
@@ -165,7 +1238,8 @@ blockquote cite a, blockquote cite a:visited {
 	border: none;
 }
 abbr {
-	font-family: "merriweather-bold", serif;
+	font-family: "Rubik", serif;
+	font-weight: bold;
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: .5px;
@@ -260,7 +1334,7 @@ select {
 	outline: none;
 	vertical-align: middle;
 	color: #a3a4a6;
-	font-family: "raleway-regular", sans-serif;
+	font-family: "Rubik", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	border-radius: 3px;
@@ -278,14 +1352,16 @@ textarea:focus {
 	background: white;
 }
 label, legend {
-	font: 15px/30px "raleway-bold", sans-serif;
+	font: 15px/30px "Rubik", sans-serif;
+    font-weight: bold;
 	margin: 12px 0;
 	color: #252525;
 	display: block;
 }
 label span, legend span {
 	color: #575859;
-	font: 15px/30px "merriweather-bold", serif;
+	font: 15px/30px "Rubik", serif;
+	font-weight: bold;
 }
 input[type="checkbox"], input[type="radio"] {
 	font-size: 15px;
@@ -382,7 +1458,8 @@ input[type="submit"],
 input[type="reset"], 
 input[type="button"] {
 	display: inline-block;
-	font: 15px/30px "raleway-bold", sans-serif;
+	font: 15px/30px "Rubik", sans-serif;
+    font-weight: bold;
 	padding: 9px 16px;
 	margin: 0 3px 6px 0;
 	background: #818fab;
@@ -416,11 +1493,13 @@ input[type="button"]:hover {
 	background: #e3520d;
 }
 button.medium, .button.medium {
-	font: 15px/30px "raleway-bold", sans-serif;
+	font: 15px/30px "Rubik", sans-serif;
+    font-weight: bold;
 	padding: 12px 18px !important;
 }
 button.large, .button.large {
-	font: 15px/30px "raleway-bold", sans-serif;
+	font: 15px/30px "Rubik", sans-serif;
+    font-weight: bold;
 	padding: 15px 20px !important;
 }
 button.round, .button.round {
@@ -582,7 +1661,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 24px;
 	border-radius: 3px;
 	background-clip: padding-box;
-	font-family: "raleway-semibold", sans-serif;
+	font-family: "Rubik", sans-serif;
+    font-weight: bolder;
 }
 .error {
 	background-color: #ffd1d2;
@@ -614,7 +1694,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin: 0;
 	padding: 14px 6px 0 0;
 	font-size: 84px;
-	font-family: "raleway-bold", sans-serif;
+	font-family: "Rubik", sans-serif;
+font-weight: bold;
 	line-height: 60px;
 	text-indent: 0;
 	background: transparent;
@@ -728,7 +1809,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
 	display: inline-block;
 	font-size: 24px;
-	font-family: "raleway-bold", sans-serif;
+	font-family: "Rubik", sans-serif;
+font-weight: bold;
 	border: none;
 	color: #252525;
 }
@@ -739,7 +1821,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	display: block;
 	margin: 6px 0 0 0;
 	font-size: 14px;
-	font-family: "raleway-regular", sans-serif;
+	font-family: "Rubik", sans-serif;
 	color: #7d7e80;
 }
 
@@ -755,7 +1837,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	padding: 0;
 }
 .pagination .page-numbers {
-	font: 15px/24px "raleway-bold", sans-serif;
+	font: 15px/24px "Rubik", sans-serif;
+	font-weight: bold;
 	display: inline-block;
 	padding: 6px 12px;
 	height: 36px;
@@ -853,7 +1936,8 @@ header .logo a {
 
 /* nav-wrap */
 #nav-wrap {
-	font: 11px "raleway-heavy", sans-serif;
+	font: 11px "Rubik", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	display: inline-block;
@@ -921,7 +2005,8 @@ ul#nav li.current a {
 /* sibebar styles
 -------------------------------------------------------------------- */
 #sidebar h5 {
-	font: 14px/24px "raleway-heavy", sans-serif;
+	font: 14px/24px "Rubik", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-top: 0;
@@ -964,7 +2049,7 @@ ul#nav li.current a {
 	list-style: none;
 }
 #sidebar .link-list li {
-	font: 14px/24px "merriweather-regular", sans-serif;
+	font: 14px/24px "Rubik", sans-serif;
 	padding: 8px 0 8px 3px;
 	margin: 0;
 }
@@ -982,7 +2067,8 @@ ul#nav li.current a {
 	font-size: 17px;
 }
 #sidebar .tagcloud a {
-	font: 12px/24px "raleway-heavy", sans-serif !important;
+	font: 12px/24px "Rubik", sans-serif !important;
+	font-weight: bold;
 	display: inline-block;
 	float: left;
 	margin: 0 0 12px 12px;
@@ -1050,7 +2136,8 @@ footer a:hover, footer a:focus {
 	color: white;
 }
 footer h3 {
-	font: 13px/24px "raleway-bold", sans-serif;
+	font: 13px/24px "Rubik", sans-serif;
+	font-weight: bold;
 	margin-bottom: 0;
 	color: white;
 	text-transform: uppercase;
@@ -1100,7 +2187,8 @@ footer #go-top a {
 	background: #d44d0d;
 	color: white;
 	text-align: center;
-	font: 12px/24px "raleway-heavy", sans-serif;
+	font: 12px/24px "Rubik", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	-moz-transition: all 0.2s ease-in-out;
@@ -1138,7 +2226,8 @@ hr {
 	text-align: center;
 }
 .section-head h1 {
-	font: 15px/24px "raleway-heavy", sans-serif;
+	font: 15px/24px "Rubik", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 	color: #252525;
@@ -1148,7 +2237,8 @@ hr {
 	color: #f26522;
 }
 .section-head p {
-	font: 18px/36px "merriweather-light", sans-serif;
+	font: 18px/36px "Rubik", sans-serif;
+	font-weight: lighter;
 	width: 95%;
 	color: #707273;
 	margin-left: auto;
@@ -1170,7 +2260,8 @@ hr {
 	max-width: 724px;
 }
 #page-title h1 {
-	font: 54px/1.3 "raleway-bold", sans-serif;
+	font: 54px/1.3 "Rubik", sans-serif;
+	font-weight: bold;
 	color: white;
 	letter-spacing: -1px;
 	margin-bottom: 0;
@@ -1198,7 +2289,8 @@ hr {
 	text-align: left;
 }
 .entry header h1 {	
-	font: 30px/36px "raleway-bold", sans-serif;
+	font: 30px/36px "Rubik", sans-serif;
+	font-weight: bold;
 	margin-bottom: 6px;
 }
 .entry header h1 a {
@@ -1215,7 +2307,7 @@ hr {
 	padding: 0;
 	font-size: 11px;
 	letter-spacing: 1px;
-	font-family: "raleway-regular", sans-serif;
+	font-family: "Rubik", sans-serif;
 	text-transform: uppercase;
 }
 .entry .entry-meta ul li a {
@@ -1234,7 +2326,7 @@ hr {
 .pagenav {
 	margin: 18px 0 6px;
 	padding: 12px 0 0 0;
-	font: 15px/30px "raleway-regular", sans-serif;
+	font: 15px/30px "Rubik", sans-serif;
 }
 .pagenav a {
 	font: 0/0 a;
@@ -1364,7 +2456,7 @@ hr {
 	margin: 10% 15%;
 }
 #hero-slider .flex-caption h1 {
-	font: 54px/1.3 "raleway-semibold", sans-serif;
+	font: 54px/1.3 "Rubik", sans-serif;
 	color: white;
 	font-weight: 900;
 	letter-spacing: -1px;
@@ -1506,13 +2598,15 @@ hr {
 	transition: opacity 0.3s ease-in-out;
 }
 .item .item-wrap .portfolio-item-meta h5 {
-	font: 15px/21px "raleway-heavy", sans-serif;
+	font: 15px/21px "Rubik", sans-serif;
+	font-weight: bold;
 	margin: 0;
 	color: white;
 	word-wrap: break-word;
 }
 .item .item-wrap .portfolio-item-meta p {
-	font: 14px/18px "raleway-semibold", sans-serif;
+	font: 14px/18px "Rubik", sans-serif;
+	font-weight: bolder;
 	color: #fbcab3;
 	margin: 0;
 }
@@ -1566,7 +2660,8 @@ hr {
 	margin: 0 auto;
 }
 .service-list h3 {
-	font: 16px/24px "raleway-heavy", sans-serif;
+	font: 16px/24px "Rubik", sans-serif;
+font-weight: bold;
 	padding: 0;
 }
 .service-list p {
@@ -1589,7 +2684,8 @@ hr {
 	max-width: 934px;
 }
 #about h3 {
-	font: 16px/36px "raleway-heavy", sans-serif;
+	font: 16px/36px "Rubik", sans-serif;
+font-weight: bold;
 	text-transform: none;
 	padding: 0;
 	margin-bottom: 0;
@@ -1689,7 +2785,8 @@ hr {
 	color: white;
 }
 #journal h3 {
-	font: 16px/27px "raleway-heavy", sans-serif;
+	font: 16px/27px "Rubik", sans-serif;
+font-weight: bold;
 	padding: 0;
 	margin: 0;
 }
@@ -1734,7 +2831,8 @@ hr {
 	margin-bottom: 30px;
 }
 #contact label {
-	font: 14px/30px "raleway-heavy", sans-serif;
+	font: 14px/30px "Rubik", sans-serif;
+font-weight: bold;
 	color: #7d7e80;
 	display: none;
 }
@@ -1840,11 +2938,12 @@ hr {
 
 .entry .tags {
 	margin-top: 18px;
-	font-family: "raleway-regular", sans-serif;
+	font-family: "Rubik", sans-serif;
 	color: #707273;
 }
 .entry .tags a {
-	font-family: "raleway-heavy", sans-serif;
+	font-family: "Rubik", sans-serif;
+font-weight: bold;
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1861,7 +2960,8 @@ hr {
 	padding-bottom: 12px;
 }
 #comments h3 {
-	font: 20px/30px "raleway-bold", sans-serif;
+	font: 20px/30px "Rubik", sans-serif;
+    font-weight: bold;
 	margin-bottom: 6px;
 }
 .commentlist {
@@ -1889,7 +2989,8 @@ hr {
 	border-radius: 100%;
 }
 .commentlist li .comment-info cite {
-	font: 14px/30px "raleway-heavy", sans-serif;
+	font: 14px/30px "Rubik", sans-serif;
+font-weight: bold;
 	color: #252525;
 }
 .commentlist li .comment-info .comment-meta {
@@ -1899,7 +3000,8 @@ hr {
 	color: #707273;
 }
 .commentlist li .comment-info .comment-meta .reply {
-	font-family: "raleway-bold", sans-serif;
+	font-family: "Rubik", sans-serif;
+font-weight: bold;
 }
 .commentlist li .comment-info .comment-meta .sep {
 	margin: 0 5px;
@@ -1993,7 +3095,8 @@ hr {
 	margin-top: 60px;
 }
 .more-projects h1 {
-	font: 30px/36px "raleway-bold", sans-serif;
+	font: 30px/36px "Rubik", sans-serif;
+    font-weight: bold;
 	text-align: center;
 	margin-bottom: 0;
 }
