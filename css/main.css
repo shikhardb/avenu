@@ -2013,6 +2013,7 @@ ul#nav li.current a {
 }
 #sidebar .widget {
 	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 
 /* search */
@@ -2058,6 +2059,7 @@ ul#nav li.current a {
 }
 #sidebar .link-list li a:hover {
 	color: #f26522;
+	border-bottom: 2px solid #f26522;
 }
 
 /* tag cloud */
